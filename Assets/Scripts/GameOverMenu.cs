@@ -11,21 +11,18 @@ public class GameOverMenu : MonoBehaviour
     {
         if (instance != null)
         {
-            Debug.LogWarning("Plus d'une instance de GameOverMenu dans la scène");
+            Debug.LogWarning("Plus d'une instance de GameOverMenu dans la scï¿½ne");
             return;
         }
 
         instance = this;
     }
 
-    void Update()
+    public void RestartGame()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && isGameOver)
-        {
-            Time.timeScale = 1;
-            isGameOver = false;
-            gameOverMenu.SetActive(false);
-        }
+        Time.timeScale = 1;
+        isGameOver = false;
+        gameOverMenu.SetActive(false);
     }
 
     public void LoadGameOverMenu()

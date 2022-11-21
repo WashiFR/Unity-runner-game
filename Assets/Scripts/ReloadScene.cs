@@ -7,8 +7,9 @@ public class ReloadScene : MonoBehaviour
     {
         if(GameOverMenu.instance.isGameOver)
         {
-            if(Input.GetKeyDown(KeyCode.Space))
+            if(Input.GetKeyDown(KeyCode.R))
             {
+                GameOverMenu.instance.RestartGame();
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             }
         }

@@ -14,7 +14,7 @@ public class MovePlayer : MonoBehaviour
     {
         isGrounded = Physics2D.OverlapArea(groundCheckLeft.position, groundCheckRight.position);
 
-        if(Input.GetKeyDown(KeyCode.Space) && isGrounded && !PauseMenu.instance.gameIsPaused)
+        if(Input.GetKeyDown(KeyCode.Space) && isGrounded && !PauseMenu.instance.gameIsPaused && !GameOverMenu.instance.isGameOver)
         {
             rb.AddForce(new Vector2(0f, jumpForce));
         }
