@@ -16,7 +16,7 @@ public class MovePlayer : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.Space) && isGrounded && !PauseMenu.instance.gameIsPaused && !GameOverMenu.instance.isGameOver)
         {
-            rb.AddForce(new Vector2(0f, jumpForce));
+            rb.AddForce(Vector2.up * jumpForce);
         }
     }
 }

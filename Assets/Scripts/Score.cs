@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class Score : MonoBehaviour
 {
-    public int score;
+    public float score;
     public Text scoreText;
 
     public static Score instance;

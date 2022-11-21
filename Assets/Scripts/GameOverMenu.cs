@@ -11,7 +11,7 @@ public class GameOverMenu : MonoBehaviour
     {
         if (instance != null)
         {
-            Debug.LogWarning("Plus d'une instance de GameOverMenu dans la sc�ne");
+            Debug.LogWarning("Plus d'une instance de GameOverMenu dans la scène");
             return;
         }
 

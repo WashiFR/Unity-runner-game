@@ -28,7 +28,7 @@ public class PauseMenu : MonoBehaviour
                 gameIsPaused = false;
                 pauseMenu.SetActive(false);
             }
-            else
+            else if(!GameOverMenu.instance.isGameOver)
             {
                 Time.timeScale = 0;
                 gameIsPaused = true;
