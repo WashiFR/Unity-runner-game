@@ -23,7 +23,7 @@ public class Score : MonoBehaviour
     {
         score++;
 
-        if(score % 10 == 0)
+        if(score % 2 == 0)
         {
             GameSpeed.instance.GameSpeedIncrease();
         }

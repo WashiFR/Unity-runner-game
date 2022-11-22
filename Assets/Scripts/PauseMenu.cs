@@ -36,4 +36,16 @@ public class PauseMenu : MonoBehaviour
             }
         }
     }
+
+    public void PlayGameButton()
+    {
+        Time.timeScale = 1;
+        gameIsPaused = false;
+        pauseMenu.SetActive(false);
+    }
+
+    public void QuitGameButton()
+    {
+        Application.Quit();
+    }
 }

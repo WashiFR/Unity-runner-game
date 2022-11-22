@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class GameSpeed : MonoBehaviour
 {
-    public int gameSpeed;
+    public float gameSpeed;
 
     public static GameSpeed instance;
 
@@ -19,6 +19,6 @@ public class GameSpeed : MonoBehaviour
 
     public void GameSpeedIncrease()
     {
-        gameSpeed++;
+        gameSpeed += 0.2f;
     }
 }

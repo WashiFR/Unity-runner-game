@@ -11,12 +11,12 @@ public class MovePlayer : MonoBehaviour
     {
         if(!PauseMenu.instance.gameIsPaused && !GameOverMenu.instance.isGameOver)
         {
-            if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow)) && isGrounded)
+            if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetMouseButtonDown(0)) && isGrounded)
             {
                 rb.AddForce(Vector2.up * jumpForce);
                 isGrounded = false;
             }
-            else if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.DownArrow)) && !isGrounded)
+            else if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.DownArrow) || Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1)) && !isGrounded)
             {
                 rb.AddForce(Vector2.down * jumpForce);
             }
