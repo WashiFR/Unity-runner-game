@@ -22,6 +22,12 @@ public class Score : MonoBehaviour
     public void ScoreUp()
     {
         score++;
+
+        if(score % 10 == 0)
+        {
+            GameSpeed.instance.GameSpeedIncrease();
+        }
+
         scoreText.text = score.ToString();
     }
 }

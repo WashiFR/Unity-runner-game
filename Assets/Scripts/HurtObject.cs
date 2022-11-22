@@ -2,13 +2,9 @@ using UnityEngine;
 
 public class HurtObject : MonoBehaviour
 {
-    public float speed;
-
-    public GameObject gameOverMenu;
-
     private void Update()
     {
-        transform.position -= new Vector3(speed * Time.deltaTime, 0);
+        transform.position -= new Vector3(GameSpeed.instance.gameSpeed * Time.deltaTime, 0);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
