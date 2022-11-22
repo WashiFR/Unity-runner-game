@@ -3,8 +3,14 @@ using UnityEngine.UI;
 
 public class Score : MonoBehaviour
 {
-    public float score;
+    public int score;
     public Text scoreText;
+
+    public int bestScore;
+    public Text bestScoreText;
+
+    public AudioSource audioSource;
+    public AudioClip soundEffect;
 
     public static Score instance;
 
@@ -23,11 +29,26 @@ public class Score : MonoBehaviour
     {
         score++;
 
-        if(score % 2 == 0)
+        if(score > bestScore)
+        {
+            bestScore = score;
+        }
+
+        if (score % 2 == 0)
         {
             GameSpeed.instance.GameSpeedIncrease();
         }
+        if (score % 10 == 0)
+        {
+            audioSource.PlayOneShot(soundEffect);
+        }
 
+        UpdateScoreUI();
+    }
+
+    public void UpdateScoreUI()
+    {
         scoreText.text = score.ToString();
+        bestScoreText.text = bestScore.ToString();
     }
 }

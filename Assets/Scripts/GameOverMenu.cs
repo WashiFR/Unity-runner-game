@@ -6,6 +6,9 @@ public class GameOverMenu : MonoBehaviour
     public GameObject gameOverMenu;
     public bool isGameOver = false;
 
+    public AudioSource audioSource;
+    public AudioClip soundEffect;
+
     public static GameOverMenu instance;
 
     private void Awake()
@@ -28,6 +31,7 @@ public class GameOverMenu : MonoBehaviour
 
     public void LoadGameOverMenu()
     {
+        audioSource.PlayOneShot(soundEffect);
         Time.timeScale = 0;
         isGameOver = true;
         gameOverMenu.SetActive(true);
