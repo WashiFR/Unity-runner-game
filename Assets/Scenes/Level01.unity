@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &130563467 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3462266196058109295, guid: 77281b60880c7904ba479a33d9dd89d2, type: 3}
+  m_PrefabInstance: {fileID: 3462266194377589698}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &204093303
 GameObject:
   m_ObjectHideFlags: 0
@@ -571,7 +576,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -805,7 +810,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1720,7 +1725,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1763,6 +1768,7 @@ GameObject:
   - component: {fileID: 1136615846}
   - component: {fileID: 1136615847}
   - component: {fileID: 1136615848}
+  - component: {fileID: 1136615849}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1936,6 +1942,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ca014dd1dce0644e807376328efcf3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1136615849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1136615841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48d500e5b70923f449e0a9662de96733, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 130563467}
 --- !u!1 &1579517269
 GameObject:
   m_ObjectHideFlags: 0
@@ -1987,7 +2006,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

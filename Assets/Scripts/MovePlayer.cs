@@ -7,6 +7,11 @@ public class MovePlayer : MonoBehaviour
 
     public Rigidbody2D rb;
 
+    private void Start()
+    {
+        gameObject.GetComponent<Renderer>().material.color = SettingsMenu.instance.color;
+    }
+
     void Update()
     {
         if(!PauseMenu.instance.gameIsPaused && !GameOverMenu.instance.isGameOver)
