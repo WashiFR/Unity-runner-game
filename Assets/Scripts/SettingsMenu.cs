@@ -6,7 +6,7 @@ public class SettingsMenu : MonoBehaviour
     public GameObject settingsMenu;
     public GameObject spriteImage1;
     public GameObject spriteImage2;
-    public Color color;
+    public Color32 color;
 
     public static SettingsMenu instance;
 
@@ -34,44 +34,43 @@ public class SettingsMenu : MonoBehaviour
 
     public void RedColorSwap()
     {
-        color = new Color(255, 0, 0, 255);
+        color = new Color32(255, 0, 0, 255);
         UpdateColor();
     }
 
     public void OrangeColorSwap()
     {
-        color = new Color(255, 176, 0, 255);
+        color = new Color32(255, 176, 0, 255);
         UpdateColor();
     }
 
     public void YellowColorSwap()
     {
-        color = new Color(255, 255, 0, 255);
+        color = new Color32(255, 255, 0, 255);
         UpdateColor();
     }
 
     public void GreenColorSwap()
     {
-        color = new Color(0, 255, 0, 255);
+        color = new Color32(0, 255, 19, 255);
         UpdateColor();
     }
 
     public void BlueColorSwap()
     {
-        color = new Color(0, 0, 255, 255);
+        color = new Color32(0, 24, 255, 255);
         UpdateColor();
     }
 
     public void PurpleColorSwap()
     {
-        color = new Color(200, 0, 255, 255);
-        Debug.Log(color);
+        color = new Color32(142, 0, 255, 255);
         UpdateColor();
     }
 
     public void WhiteColorSwap()
     {
-        color = new Color(255, 255, 255, 255);
+        color = new Color32(255, 255, 255, 255);
         UpdateColor();
     }
 }
