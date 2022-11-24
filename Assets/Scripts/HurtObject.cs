@@ -13,6 +13,7 @@ public class HurtObject : MonoBehaviour
         {
             GameOverMenu.instance.LoadGameOverMenu();
             LoadAndSaveData.instance.SaveDataBestScore();
+            AudioManager.instance.audioSource.Stop();
         }
     }
 }

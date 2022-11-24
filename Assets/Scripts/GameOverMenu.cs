@@ -27,7 +27,7 @@ public class GameOverMenu : MonoBehaviour
         Time.timeScale = 1;
         isGameOver = false;
         gameOverMenu.SetActive(false);
-        //Cursor.visible = false;
+        Cursor.visible = false;
     }
 
     public void LoadGameOverMenu()
@@ -36,7 +36,7 @@ public class GameOverMenu : MonoBehaviour
         Time.timeScale = 0;
         isGameOver = true;
         gameOverMenu.SetActive(true);
-        //Cursor.visible = true;
+        Cursor.visible = true;
     }
 
     public void RetryGameButton()
