@@ -28,15 +28,11 @@ public class Score : MonoBehaviour
     public void ScoreUp()
     {
         score++;
+        GameSpeed.instance.GameSpeedIncrease();
 
-        if(score > bestScore)
+        if (score > bestScore)
         {
             bestScore = score;
-        }
-
-        if (score % 2 == 0)
-        {
-            GameSpeed.instance.GameSpeedIncrease();
         }
         if (score % 10 == 0)
         {

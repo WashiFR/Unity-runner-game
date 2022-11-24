@@ -8,6 +8,7 @@ public class MainMenu : MonoBehaviour
     public void StartGameButton()
     {
         SceneManager.LoadScene("Level01");
+        Cursor.visible = false;
     }
 
     public void LoadSettingsMenu()

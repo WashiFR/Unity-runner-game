@@ -19,6 +19,6 @@ public class GameSpeed : MonoBehaviour
 
     public void GameSpeedIncrease()
     {
-        gameSpeed += 0.2f;
+        gameSpeed += 0.1f;
     }
 }

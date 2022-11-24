@@ -22,7 +22,7 @@ public class SpawnObstacles : MonoBehaviour
             {
                 obstacleNumber = 2;
             }
-            Instantiate(obstacles[obstacleNumber].gameObject, new Vector3(Random.Range(18, 24), 0.345f, 0), Quaternion.identity);
+            Instantiate(obstacles[obstacleNumber].gameObject, new Vector3(Random.Range(18, 24), 0.29f, 0), Quaternion.identity);
         }
     }
 }
