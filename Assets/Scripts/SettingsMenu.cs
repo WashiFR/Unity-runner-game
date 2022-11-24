@@ -4,8 +4,16 @@ using UnityEngine.UI;
 public class SettingsMenu : MonoBehaviour
 {
     public GameObject settingsMenu;
-    public GameObject spriteImage1;
-    public GameObject spriteImage2;
+
+    public GameObject cubySprite1;
+    public GameObject cubySprite2;
+
+    public GameObject cubilleSprite1;
+    public GameObject cubilleSprite2;
+
+    public GameObject cuboolSprite1;
+    public GameObject cuboolSprite2;
+
     public Color32 color;
 
     public static SettingsMenu instance;
@@ -28,8 +36,14 @@ public class SettingsMenu : MonoBehaviour
 
     public void UpdateColor()
     {
-        spriteImage1.GetComponent<Image>().color = color;
-        spriteImage2.GetComponent<Image>().color = color;
+        cubySprite1.GetComponent<Image>().color = color;
+        cubySprite2.GetComponent<Image>().color = color;
+
+        cubilleSprite1.GetComponent<Image>().color = color;
+        cubilleSprite2.GetComponent<Image>().color = color;
+
+        cuboolSprite1.GetComponent<Image>().color = color;
+        cuboolSprite2.GetComponent<Image>().color = color;
     }
 
     public void RedColorSwap()

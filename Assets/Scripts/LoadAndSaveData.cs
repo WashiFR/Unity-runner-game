@@ -21,7 +21,7 @@ public class LoadAndSaveData : MonoBehaviour
         Score.instance.UpdateScoreUI();
     }
 
-    public void SaveData()
+    public void SaveDataBestScore()
     {
         PlayerPrefs.SetInt("bestScorePlayer", Score.instance.bestScore);
     }

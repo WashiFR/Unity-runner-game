@@ -28,14 +28,14 @@ public class PauseMenu : MonoBehaviour
                 Time.timeScale = 1;
                 gameIsPaused = false;
                 pauseMenu.SetActive(false);
-                Cursor.visible = false;
+                //Cursor.visible = false;
             }
             else if(!GameOverMenu.instance.isGameOver)
             {
                 Time.timeScale = 0;
                 gameIsPaused = true;
                 pauseMenu.SetActive(true);
-                Cursor.visible = true;
+                //Cursor.visible = true;
             }
         }
     }
@@ -45,14 +45,14 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1;
         gameIsPaused = false;
         pauseMenu.SetActive(false);
-        Cursor.visible = false;
+        //Cursor.visible = false;
     }
 
     public void MainMenuButton()
     {
         GameOverMenu.instance.RestartGame();
         SceneManager.LoadScene("MainMenu");
-        Cursor.visible = true;
+        //Cursor.visible = true;
     }
 
     public void QuitGameButton()

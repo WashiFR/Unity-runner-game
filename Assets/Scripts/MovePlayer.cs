@@ -9,7 +9,7 @@ public class MovePlayer : MonoBehaviour
 
     private void Start()
     {
-        if(CharacterSelection.instance.selectedCharacter == 0)
+        if(CharacterSelection.instance.selectedCharacter == 0 || CharacterSelection.instance.selectedCharacter == 1 || CharacterSelection.instance.selectedCharacter == 2)
         {
             gameObject.GetComponent<Renderer>().material.color = SettingsMenu.instance.color;
         }
@@ -28,7 +28,7 @@ public class MovePlayer : MonoBehaviour
             {
                 rb.AddForce(Vector2.down * jumpForce);
             }
-        }
+        }     
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

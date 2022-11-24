@@ -12,7 +12,7 @@ public class HurtObject : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             GameOverMenu.instance.LoadGameOverMenu();
-            LoadAndSaveData.instance.SaveData();
+            LoadAndSaveData.instance.SaveDataBestScore();
         }
     }
 }
