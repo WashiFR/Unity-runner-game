@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8771017469983665320
+--- !u!1 &8899297789405538609
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,24 +8,24 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8771017469983665321}
-  - component: {fileID: 8771017469983665316}
-  - component: {fileID: 8771017469983665319}
-  - component: {fileID: 8771017469983665318}
+  - component: {fileID: 745422140582969960}
+  - component: {fileID: 3969696937565991847}
+  - component: {fileID: 6712729371852719491}
+  - component: {fileID: 6672030205945663137}
   m_Layer: 5
-  m_Name: Sprite1
-  m_TagString: ImageAnimate
+  m_Name: CubinjaUI
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &8771017469983665321
+--- !u!224 &745422140582969960
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8771017469983665320}
+  m_GameObject: {fileID: 8899297789405538609}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -36,24 +36,24 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -279, y: -19.18}
-  m_SizeDelta: {x: 110.7077, y: 110.71}
+  m_AnchoredPosition: {x: 0, y: 49.999985}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &8771017469983665316
+--- !u!222 &3969696937565991847
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8771017469983665320}
+  m_GameObject: {fileID: 8899297789405538609}
   m_CullTransparentMesh: 1
---- !u!114 &8771017469983665319
+--- !u!114 &6712729371852719491
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8771017469983665320}
+  m_GameObject: {fileID: 8899297789405538609}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -67,7 +67,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1636044521, guid: e87d11e2e97e9524c83b0ff147690c69, type: 3}
+  m_Sprite: {fileID: 894176502, guid: 7db9fba0eb98ad14daf52223bb42cf31, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -77,17 +77,17 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!95 &8771017469983665318
+--- !u!95 &6672030205945663137
 Animator:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8771017469983665320}
+  m_GameObject: {fileID: 8899297789405538609}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: cd3e8a48b8e411948a9ece47d854f211, type: 2}
+  m_Controller: {fileID: 9100000, guid: 984ce0c1ee0183546a68541a4b565f49, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

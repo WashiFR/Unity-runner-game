@@ -9,7 +9,10 @@ public class MovePlayer : MonoBehaviour
 
     private void Start()
     {
-        gameObject.GetComponent<Renderer>().material.color = SettingsMenu.instance.color;
+        if(CharacterSelection.instance.selectedCharacter == 0)
+        {
+            gameObject.GetComponent<Renderer>().material.color = SettingsMenu.instance.color;
+        }
     }
 
     void Update()
