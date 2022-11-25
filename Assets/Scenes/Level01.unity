@@ -316,8 +316,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 85.47998, y: 23}
-  m_SizeDelta: {x: 170, y: 50}
+  m_AnchoredPosition: {x: 118.8035, y: 23}
+  m_SizeDelta: {x: 236.647, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &233454801
 MonoBehaviour:
@@ -352,7 +352,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Record :'
+  m_Text: 'Highscore :'
 --- !u!222 &233454802
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -556,8 +556,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 85.966, y: 23}
-  m_SizeDelta: {x: 170, y: 50}
+  m_AnchoredPosition: {x: 118.64868, y: 23}
+  m_SizeDelta: {x: 236.647, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &327327143
 MonoBehaviour:
@@ -1128,7 +1128,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 246.42, y: 23}
+  m_AnchoredPosition: {x: 312.02, y: 25}
   m_SizeDelta: {x: 150.1, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &871503365
@@ -1166,7 +1166,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 233.93, y: 23}
+  m_AnchoredPosition: {x: 300.58, y: 23}
   m_SizeDelta: {x: 126.91, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &871503367

@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    public GameObject customMenu;
     public GameObject settingsMenu;
 
     public void StartGameButton()
@@ -14,6 +15,11 @@ public class MainMenu : MonoBehaviour
     public void LoadSettingsMenu()
     {
         settingsMenu.SetActive(true);
+    }
+
+    public void LoadCustomMenu()
+    {
+        customMenu.SetActive(true);
     }
 
     public void QuitGameButton()

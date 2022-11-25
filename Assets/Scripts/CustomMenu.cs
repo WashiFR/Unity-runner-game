@@ -1,9 +1,9 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SettingsMenu : MonoBehaviour
+public class CustomMenu : MonoBehaviour
 {
-    public GameObject settingsMenu;
+    public GameObject customMenu;
 
     public GameObject cubySprite1;
     public GameObject cubySprite2;
@@ -16,22 +16,22 @@ public class SettingsMenu : MonoBehaviour
 
     public Color32 color;
 
-    public static SettingsMenu instance;
+    public static CustomMenu instance;
 
     private void Awake()
     {
         if (instance != null)
         {
-            Debug.LogWarning("Plus d'une instance de SettingsMenu dans la scène");
+            Debug.LogWarning("Plus d'une instance de CustomMenu dans la scène");
             return;
         }
 
         instance = this;
     }
 
-    public void ExitSettingsMenu()
+    public void ExitCustomMenu()
     {
-        settingsMenu.SetActive(false);
+        customMenu.SetActive(false);
     }
 
     public void UpdateColor()

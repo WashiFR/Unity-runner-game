@@ -11,7 +11,7 @@ public class MovePlayer : MonoBehaviour
     {
         if(CharacterSelection.instance.selectedCharacter == 0 || CharacterSelection.instance.selectedCharacter == 1 || CharacterSelection.instance.selectedCharacter == 2)
         {
-            gameObject.GetComponent<Renderer>().material.color = SettingsMenu.instance.color;
+            gameObject.GetComponent<Renderer>().material.color = CustomMenu.instance.color;
         }
     }
 
