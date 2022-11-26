@@ -13,6 +13,10 @@ public class MovePlayer : MonoBehaviour
         {
             gameObject.GetComponent<Renderer>().material.color = CustomMenu.instance.color;
         }
+        else
+        {
+            gameObject.GetComponent<Renderer>().material.color = new Color32(255, 255, 255, 255);
+        }
     }
 
     void Update()
