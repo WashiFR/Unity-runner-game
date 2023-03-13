@@ -2,4 +2,4 @@
 
 ## Play the game
 
-Jeu runner 2D, mon premier jeu créé sur Unity.
+https://washi-fr.itch.io/cubrunner
